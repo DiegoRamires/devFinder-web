@@ -3,6 +3,7 @@ import React from "react";
 import "./global.css";
 import "./App.css";
 import "./Sidebar.css";
+import "./Main.css";
 
 function App() {
   return (
@@ -35,7 +36,74 @@ function App() {
           <button type="submit">Salvar</button>
         </form>
       </aside>
-      <main></main>
+      <main>
+        <ul>
+          <li className="dev-item">
+            <header>
+              <img
+                src="https://avatars3.githubusercontent.com/u/7052300?s=460&v=4"
+                alt="Diego Ramires"
+              />
+              <div className="user-info">
+                <strong>Diego Ramires</strong>
+                <span>ReactJS, Node.js</span>
+              </div>
+            </header>
+            <p>Biografia</p>
+            <a href="https://github.com/DiegoRamires">
+              Acessar Perfil no Github
+            </a>
+          </li>
+          <li className="dev-item">
+            <header>
+              <img
+                src="https://avatars3.githubusercontent.com/u/7052300?s=460&v=4"
+                alt="Diego Ramires"
+              />
+              <div className="user-info">
+                <strong>Diego Ramires</strong>
+                <span>ReactJS, Node.js</span>
+              </div>
+            </header>
+            <p>Biografia</p>
+            <a href="https://github.com/DiegoRamires">
+              Acessar Perfil no Github
+            </a>
+          </li>
+          <li className="dev-item">
+            <header>
+              <img
+                src="https://avatars3.githubusercontent.com/u/7052300?s=460&v=4"
+                alt="Diego Ramires"
+              />
+              <div className="user-info">
+                <strong>Diego Ramires</strong>
+                <span>ReactJS, Node.js</span>
+              </div>
+            </header>
+            <p>Biografia</p>
+            <a href="https://github.com/DiegoRamires">
+              Acessar Perfil no Github
+            </a>
+          </li>
+          <li className="dev-item">
+            <header>
+              <img
+                src="https://avatars3.githubusercontent.com/u/7052300?s=460&v=4"
+                alt="Diego Ramires"
+              />
+              <div className="user-info">
+                <strong>Diego Ramires</strong>
+                <span>ReactJS, Node.js</span>
+              </div>
+            </header>
+            <p>Biografia</p>
+            <a href="https://github.com/DiegoRamires">
+              Acessar Perfil no Github
+            </a>
+          </li>
+        </ul>
+      </main>
     </div>
   );
 }
