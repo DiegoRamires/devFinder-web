@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import api from "./services/api";
+
 import "./global.css";
 import "./App.css";
 import "./Sidebar.css";
@@ -29,11 +31,25 @@ function App() {
     );
   }, []);
 
+  async function handleAddDev(e) {
+    e.preventDefault();
+
+    const response = await api.post("/devs", {
+      github_username,
+      techs,
+      latitude,
+      longitude
+    });
+
+    setGithuUsername("");
+    setTechs("");
+  }
+
   return (
     <div id="app">
       <aside>
         <strong>Cadastrar</strong>
-        <form>
+        <form onSubmit={handleAddDev}>
           <div className="input-block">
             <label htmlFor="github_username">Usuário do Github</label>
             <input
