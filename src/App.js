@@ -50,6 +50,7 @@ function App() {
                 id="latitude"
                 required
                 value={latitude}
+                onChange={e => setLatitude(e.target.value)}
               />
             </div>
 
@@ -61,6 +62,7 @@ function App() {
                 id="longitude"
                 required
                 value={longitude}
+                onChange={e => setLongitude(e.target.value)}
               />
             </div>
           </div>
