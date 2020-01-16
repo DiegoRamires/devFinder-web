@@ -55,6 +55,8 @@ function App() {
 
     setGithuUsername("");
     setTechs("");
+
+    setDevs([...devs, response.data]);
   }
 
   return (
